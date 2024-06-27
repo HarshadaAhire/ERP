@@ -1,0 +1,199 @@
+.expense-container {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+  grid-area: main;
+  overflow-y: auto;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.header1 {
+  background-color: #f78989;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.header1 h1 {
+  margin: 0;
+  color: #fff;
+}
+
+.header1 p {
+  margin: 5px 0 0;
+  color: #555;
+  color: #fff;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 30px; /* Added gap to ensure equal space between cards */
+}
+
+.summary-card {
+  background-color: #fff; /* White background */
+  color: #000; /* Black text color */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 50px; /* Reduced padding */
+  border-radius: 5px;
+  margin-top: 30px;
+  text-align: center;
+  flex: 1; /* Allow cards to have equal width */
+}
+
+.summary-card h2 {
+  margin: 0 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2em;
+}
+
+.summary-card p {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.summary-card .icon-wrapper {
+  background-color: #000; /* Black background for icons */
+  border-radius: 70%; /* Circular background */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary-card .icon-wrapper svg {
+  color: #fff; /* White icon color */
+}
+
+.total-expenses .icon-wrapper {
+  background-color: #f00c1f; /* Red background for total expenses icon */
+}
+
+.yearly-expenses .icon-wrapper {
+  background-color: #ff8c00; /* Orange background for yearly expenses icon */
+}
+
+.monthly-expenses .icon-wrapper {
+  background-color: #1c9cec; /* Blue background for monthly expenses icon */
+}
+
+.weekly-expenses .icon-wrapper {
+  background-color: #b3e459; /* Green background for weekly expenses icon */
+}
+
+.transaction-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+  color: #333;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.add-transaction,
+.history {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 48%;
+}
+
+.add-transaction h2,
+.history h2 {
+  margin-top: 0;
+}
+
+.add-transaction input,
+.add-transaction select,
+.add-transaction button {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.add-transaction button {
+  background-color: #f86c67;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.add-transaction button:hover {
+  background-color: #218838;
+}
+
+.history table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history th,
+.history td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  font-size: 15px;
+  vertical-align: middle; /* Ensure icons are vertically centered */
+}
+
+.history th {
+  background-color: #f8f8f8;
+}
+
+.history td {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 150px; /* Adjust max-width as necessary */
+}
+
+.history td button {
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  padding: 5px;
+  margin: 0 2px; /* Adjusted margin */
+  cursor: pointer;
+  font-size: 1.2em; /* Increased icon size */
+}
+
+.history td button:hover {
+  color: #0056b3;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.filter-buttons button {
+  flex: 1;
+  padding: 10px;
+  margin: 5px;
+  color: #fff;
+  background-color: #ee7171;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.filter-buttons button:hover {
+  background-color: #ddd;
+}

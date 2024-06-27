@@ -1,0 +1,147 @@
+.attendance-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 500px; /* Adjust as needed */
+  }
+  
+  .attendance-heading {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .clock-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #8595ee;
+  }
+  
+  .current-time {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: rgb(61, 57, 57);
+    font-weight: bold;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #f77878;
+    /* Change button color */
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .buttons button:hover {
+    background-color: #accaf1;
+    /* Change hover color */
+  }
+  
+  .timestamps {
+    font-size: 16px;
+    text-align: left;
+    /* Align text to the left */
+    width: 100%;
+    padding: 0 20px;
+    color: rgb(75, 71, 71);
+  }
+  
+  /* Responsive Styles */
+  
+  @media screen and (max-width: 1024px) {
+    .attendance-container {
+      max-width: 400px; /* Adjust as needed */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .attendance-container {
+      margin-top: 15%;
+      padding: 15px;
+    }
+  
+    .attendance-heading {
+      font-size: 18px;
+    }
+  
+    .clock-icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+  
+    .current-time {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+  
+    .buttons {
+      gap: 20px;
+    }
+  
+    .buttons button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    .timestamps {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .attendance-container {
+      margin-top: 20%;
+    }
+  
+    .attendance-heading {
+      font-size: 16px;
+    }
+  
+    .clock-icon {
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+  
+    .current-time {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+  
+    .buttons {
+      gap: 15px;
+    }
+  
+    .buttons button {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+  
+    .timestamps {
+      font-size: 12px;
+    }
+  }
+  

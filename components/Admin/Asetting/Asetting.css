@@ -1,0 +1,188 @@
+/* setting.css */
+
+.setting-page {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.emp-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.emp-profile div {
+  /* Placeholder for employee profile picture */
+  width: 100px;
+  height: 100px;
+  background-color: rgb(250, 247, 247);
+  border-radius: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  background-color: transparent;
+  border: none;
+  color: #333; /* Set the color of the tab text to black */
+  font-size: 0.9rem;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  border-radius: 30px;
+}
+
+.tabs button.active {
+  color: #f7f9fc; /* Set the color of the active tab text to blue */
+}
+
+.tabs button:hover {
+  color: #e2e6eb; /* Change the color of the tab text on hover */
+}
+
+.personal-info-section {
+  margin-bottom: 20px;
+  color: rgb(46, 45, 45);
+}
+
+.personal-info-section h2 {
+  margin-bottom: 10px;
+  color: #494747;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  color: #494747;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: rgb(34, 30, 30);
+  font-weight: bold;
+}
+
+.form-group input[type='text'],
+.form-group input[type='email'],
+.form-group input[type='password'] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #e08080;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.change-password-section {
+  color: rgb(78, 75, 75);
+}
+
+/* Toggle switches */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 20px; /* Width of the toggle switch */
+  height: 20px; /* Height of the toggle switch */
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-switch-label {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; /* Background color of the toggle switch when off */
+  border-radius: 20px; /* Border radius to make it round */
+  transition: background-color 0.4s; /* Smooth transition effect */
+}
+
+.toggle-switch-label:before {
+  position: absolute;
+  content: '';
+  height: 16px; /* Height of the toggle switch handle */
+  width: 16px; /* Width of the toggle switch handle */
+  left: 2px; /* Position of the handle */
+  bottom: 2px; /* Position of the handle */
+  background-color: white; /* Color of the handle */
+  border-radius: 50%; /* Make it round */
+  transition: transform 0.4s; /* Smooth transition effect */
+}
+
+.toggle-switch input:checked + .toggle-switch-label {
+  background-color: #f77676; /* Background color of the toggle switch when on */
+}
+
+.toggle-switch input:focus + .toggle-switch-label {
+  box-shadow: 0 0 1px #2196F3; /* Add shadow when focused */
+}
+
+.toggle-switch input:checked + .toggle-switch-label:before {
+  transform: translateX(20px); /* Move the handle to the right when toggled on */
+}
+
+.notification-option {
+  margin-right: 60px; /* Adjust spacing between each notification option */
+  margin-bottom: 10px; /* Adjust vertical spacing between rows */
+}
+
+.notification-section {
+  color: #333;
+}
+
+/* Additional styles for the notifications section */
+.notification-settings {
+  color: #333;
+}
+
+.notification-settings h5 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.notification-type {
+  margin-bottom: 20px;
+}
+
+.notification-type h5 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.notification-option label {
+  margin-right: 10px;
+  width: 40px; /* Adjust label width to ensure consistent spacing */
+}
+
+.error-message {
+  color: red; /* Set error message color */
+}
+.notifications-section {
+  color: #494747;
+  ; /* Change the color of the notification text */
+}

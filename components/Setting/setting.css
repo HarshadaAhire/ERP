@@ -1,0 +1,248 @@
+/* setting.css */
+
+.main-container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 40px;
+  padding: 40px;
+}
+
+.profile-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color:#2a2a2b;
+}
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  width: 400px;
+  height:750px;
+  margin-top: 70px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+  margin-top: 50px;
+  width: 150px; /* Ensure the width and height are equal */
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc; /* Optional: Add a border for better appearance */
+}
+
+.profile-header h1 {
+  margin: 20px 0;
+  font-size: 26px;
+}
+
+.profile-header p {
+  margin: 5px 0;
+  color: hsl(0, 2%, 9%);
+  text-align: center;
+}
+
+.profile-actions {
+  margin: 20px 0;
+  display: flex;
+  gap: 30px;
+}
+
+.follow-btn,
+.message-btn {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.follow-btn {
+  background-color: #c92d2d;
+  color: white;
+}
+
+.message-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.about-me {
+  margin: 20px 0;
+  text-align: left;
+  color: hsl(0, 2%, 9%);
+}
+
+.about-me p:first-child {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #f03d3d;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the icon inside the circle */
+  width: 50px; /* Define the width and height for the circle */
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ccc; /* Add border to the circle */
+  transition: transform 0.3s ease; /* Add a transition for hover effect */
+}
+
+.social-links a:hover {
+  transform: scale(1.1); /* Scale up the icon on hover */
+}
+
+.social-links i {
+  font-size: 24px; /* Adjust font size as needed */
+}
+
+/* Specific colors for each social media icon */
+.social-links a.github {
+  color: #333;
+}
+
+.social-links a.twitter {
+  color: #1DA1F2;
+}
+
+.social-links a.instagram {
+  color: #FD1D1D;
+}
+
+.social-links a.facebook {
+  color: #1877F2;
+}
+
+.details-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: #5c5b5b;
+}
+
+.user-details,
+.project-progress-container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 10px;
+  width: 900px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 60px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.tab-button.active {
+  background-color: #f37777;
+  color: white;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-info label {
+  font-weight: bold;
+  margin-left: 40px;
+}
+
+.user-info input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-left: 40px;
+  width: 800px;
+}
+
+.user-info button {
+  padding: 8px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 40px;
+  background-color: #fc6161;
+  color: white;
+  width: 100px;
+}
+
+.project-progress h3 {
+  margin-bottom: 20px;
+}
+
+.project-progress .status-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.project-progress .progress-bar {
+  width: 70%;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.project-progress .progress {
+  height: 5px;
+  background-color: #2a2a2b;
+}
+
+.project-progress .progress-bar.web-design {
+  background-color: #a0a9b3; /* Blue */
+}
+
+.project-progress .progress-bar.website-markup {
+  background-color: #8cd19c; /* Green */
+}
+
+.project-progress .progress-bar.one-page {
+  background-color: #d6c183; /* Yellow */
+}
+
+.project-progress .progress-bar.mobile-template {
+  background-color: #c29499; /* Red */
+}
+
+.project-progress .progress-bar.backend-api {
+  background-color: #818174; /* Teal */
+}
+
+

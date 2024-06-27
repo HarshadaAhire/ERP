@@ -1,0 +1,138 @@
+/* General Container Styles */
+.leave-management-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header Styles */
+.h1 {
+  color: #201f1f; /* Dark gray color for header */
+  text-align: center;
+}
+
+/* Filter Section Styles */
+.filter-section {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filter-section button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.filter-section button.active {
+  background-color: #df7777; /* Darker red color for active buttons */
+  color: #fff; /* White text color for active buttons */
+  font-weight: bold;
+}
+
+/* Leave Request Styles */
+.leave-requests {
+  margin-top: 20px;
+}
+
+.leave-request {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.leave-request div {
+  margin-bottom: 5px;
+}
+
+.leave-request .h2 {
+  color: #574f4f; /* Dark gray color for leave request details */
+}
+
+/* Status Styles */
+.leave-request .status.pending {
+  color: #ffc107; /* Yellow color for pending */
+}
+
+.leave-request .status.approved {
+  color: #28a745; /* Green color for approved */
+}
+
+.leave-request .status.rejected {
+  color: #dc3545; /* Red color for rejected */
+}
+
+/* Action Buttons Styles */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.actions button.approve {
+  background-color: #28a745; /* Green color for approve */
+  color: #fff;
+}
+
+.actions button.pending {
+  background-color: #ffc107; /* Yellow color for pending */
+  color: #000; /* Black color for text */
+}
+
+.actions button.reject {
+  background-color: #dc3545; /* Red color for reject */
+  color: #fff;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .leave-request {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .filter-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-section button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .actions button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .leave-management-container {
+    padding: 10px;
+  }
+
+  .filter-section button,
+  .actions button {
+    padding: 8px 10px;
+  }
+}

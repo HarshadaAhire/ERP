@@ -1,0 +1,301 @@
+/* Base styles for larger screens */
+.main {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0.5rem;
+  margin: 0 auto; /* Center the calendar */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d1b1b;
+  color: #eee9e9;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.h2 {
+  color: #474343;
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.calendar-header {
+  background-color: #f17575;
+  width: 270%;
+  margin-left: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.calendar-header button {
+  font-size: 1.7rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #eee9e9;
+}
+
+.button-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.button-container button {
+  padding: 0.5rem 1rem;
+  background-color: #6d746d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.button-container button:hover {
+  background-color: #fc5c5c;
+}
+
+.calendar-body {
+  background-color: #f9f9f9;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  width: 270%;
+  margin-left: 70px;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.box {
+  height: 100px;
+  background-color: #f0f0f0;
+  border: 1px solid #fffefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: black;
+}
+
+.box.empty {
+  background-color: #e0e0e0;
+  cursor: default;
+}
+
+.box.today {
+  background-color: green;
+  color: white;
+}
+
+.box.holiday {
+  background-color: red;
+  color: white;
+}
+
+.box.leave {
+  background-color: yellow;
+  color: black;
+}
+
+.box.event {
+  background-color: blue;
+  color: white;
+}
+
+.legend {
+  margin-top: 1rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+.legend-item .box {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.days-of-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 1rem;
+  width: 272%;
+  margin-left: 70px;
+}
+
+.day-header {
+  height: 40px;
+  background-color: #f17575;
+  color: #eee9e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.holiday-details {
+  font-weight: bold;
+  color: #d83838;
+}
+
+.holiday-date {
+  color: #adaaaa;
+}
+
+.holiday-name {
+  color: #312929;
+}
+
+.holiday-list {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.holiday-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.holiday-list-header h3 {
+  margin: 0;
+  color: #474343;
+}
+
+.holiday-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.holiday-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.holiday-item .bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.holiday-details span {
+  display: block;
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  color: #474343;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #f50e0e;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+  .calendar-header, .calendar-body, .days-of-week {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .body {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .box {
+    height: 80px;
+  }
+
+  .calendar-header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+
+  .calendar-header, .calendar-body, .days-of-week {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .calendar-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .button-container button {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .body {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .box {
+    height: 60px;
+  }
+
+  .day-header {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .calendar-header, .calendar-body, .days-of-week {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .calendar-header h2 {
+    font-size: 1rem;
+  }
+
+  .button-container button {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+  }
+
+  .body {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .box {
+    height: 50px;
+  }
+
+  .day-header {
+    font-size: 0.7rem;
+  }
+}

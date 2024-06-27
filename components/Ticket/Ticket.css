@@ -1,0 +1,214 @@
+.ticket-screen {
+  padding: 70px;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.tickets-heading {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 40px; /* Increase padding to enlarge card */
+  border-radius: 8px;
+  width: 23%; /* Increase width */
+  color: rgb(61, 59, 59);
+  gap: 70px;
+  transition: background 0.3s;
+}
+
+.card:hover {
+  background: #f39191;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.total-tickets .icon-container {
+  background-color: #e0f7fa; /* Light Cyan */
+}
+
+.total-tickets .icon {
+  color: #00796b; /* Teal */
+}
+
+.pending-tickets .icon-container {
+  background-color: #fff3e0; /* Light Orange */
+}
+
+.pending-tickets .icon {
+  color: #e65100; /* Dark Orange */
+}
+
+.deleted-tickets .icon-container {
+  background-color: #ffebee; /* Light Red */
+}
+
+.deleted-tickets .icon {
+  color: #b71c1c; /* Dark Red */
+}
+
+.closed-tickets .icon-container {
+  background-color: #e8eaf6; /* Light Blue */
+}
+
+.closed-tickets .icon {
+  color: #1a237e; /* Dark Blue */
+}
+
+.card .icon {
+  font-size: 30px; /* Adjust icon size as needed */
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* font-weight: bold; */
+}
+
+.card-content h3,
+.card-content p {
+  margin: 0;
+  margin-bottom: 15px; /* Add space between number and name */
+  font-weight: bold;
+}
+
+.card-content p {
+  font-size: 24px; /* Increase font size of number */
+  margin-top: 5px; /* Add space above the number */
+}
+
+.table-container {
+  margin-top: 60px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.add-ticket-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #ee7979;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-ticket-button:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px; /* Increase font size of table */
+}
+
+th,
+td {
+  padding: 15px; /* Increase padding */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: rgb(61, 59, 59);
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.action-btn {
+  padding: 8px 12px; /* Increase padding for action buttons */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.edit-btn {
+  background-color: #8a8a85;
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.delete-btn {
+  background-color: #918e8f;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background-color: #f7132a;
+}
+
+.status-label,
+.priority-label {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px; /* Smaller font size */
+}
+
+.status-open {
+  background-color: #4caf50; /* Green */
+}
+
+.status-closed {
+  background-color: #9e9e9e; /* Gray */
+}
+
+.priority-high {
+  background-color: #f44336; /* Red */
+}
+
+.priority-medium {
+  background-color: #2196f3; /* Blue */
+}
+
+.priority-low {
+  background-color: #9e9e9e; /* Gray */
+}
+
+.requested-by {
+  display: flex;
+  align-items: center;
+}
+
+.requested-by img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}

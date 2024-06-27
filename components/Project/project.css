@@ -1,0 +1,134 @@
+/* Global reset and box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.wrapper {
+  width: 1600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters select {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-left: 90px;
+}
+
+.project-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #141313;
+}
+
+.project-card .status {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.project-card .status.in-progress {
+  background-color: #28a745;
+}
+
+.project-card .status.completed {
+  background-color: #007bff;
+}
+
+.project-card .status.pending {
+  background-color: #f3d065;
+}
+
+.project-card .meta {
+  color: #292828;
+  margin-bottom: 10px;
+}
+
+.project-card .team {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.project-card .team img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px; /* Increased margin between team members */
+}
+
+.project-card .description {
+  margin-bottom: 10px; /* Added margin below description */
+}
+
+.project-card .show-more {
+  color: blue; /* Blue color for "See more" text */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-decoration: underline; /* Underline for emphasis */
+}
+
+.project-card .progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px; /* Added margin above progress bar */
+  position: relative;
+}
+
+.project-card .progress-bar {
+  height: 5px; /* Smaller height for progress bar */
+  width: 60%; /* Adjust the width of the progress bar */
+  border-radius: 2px; /* Adjust the border radius */
+  background-color: #f0f0f0; /* Background color for progress bar */
+  margin-right: 8px; /* Optional: Adjust margin */
+}
+
+.project-card .progress-bar.blue {
+  background-color: blue; /* Adjust color for 'blue' progress */
+}
+
+.project-card .progress-bar.green {
+  background-color: green; /* Adjust color for 'green' progress */
+}
+
+.project-card .progress-bar.yellow {
+  background-color: yellow; /* Adjust color for 'yellow' progress */
+}
+
+.project-card .progress-text {
+  font-size: 14px;
+  color: #141313;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: -20px; /* Position above the progress bar */
+  left: 0;
+  right: 0;
+}

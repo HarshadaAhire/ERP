@@ -1,0 +1,72 @@
+.notice {
+  width: 80%; /* Adjust width for responsiveness */
+  max-width: 800px;
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: rgb(63, 61, 61);
+  font-weight: bolder;
+}
+
+.event-section {
+  margin-bottom: 30px;
+}
+
+.event-section h2 {
+  margin-top: 0;
+  color: #ddd;
+}
+
+.event-card {
+  background-color: #f18986;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  animation: fadeIn 0.3s ease-in-out; /* Apply animation to event cards */
+  transition: transform 0.2s ease; /* Add transition for hover effect */
+}
+
+.event-card:hover {
+  transform: scale(1.10); /* Scale up card slightly on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with 0 opacity */
+    transform: translateY(-20px); /* Move card up slightly */
+  }
+  to {
+    opacity: 1; /* End with full opacity */
+    transform: translateY(0); /* Move card back to its original position */
+  }
+}
+
+.event-card h3 {
+  margin-top: 0;
+  color: black;
+  border-radius: 20px;
+}
+
+.event-card p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+  .notice {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .notice {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .event-card {
+    padding: 10px;
+  }
+}

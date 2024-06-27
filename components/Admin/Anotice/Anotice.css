@@ -1,0 +1,154 @@
+/* General Container Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+h2 {
+  color: #201f1f; /* Dark gray color for header */
+  text-align: center;
+}
+
+/* Form Styles */
+.notice-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.notice-form form {
+  width: 100%;
+  max-width: 700px;
+}
+
+.notice-form input[type="date"],
+.notice-form input[type="text"],
+.notice-form textarea {
+  width: calc(100% - 20px); /* Adjust the width to account for padding */
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: none;
+}
+
+/* Changed button color to green */
+.notice-form button[type="submit"] {
+  width: calc(100% - 20px); /* Adjust the width to account for padding */
+  padding: 12px;
+  margin-left: 10px;
+  background-color: #f77272; /* Green color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.notice-form button[type="submit"]:hover {
+  background-color: #9aaaf1; /* Darker green for hover */
+}
+
+.notice-form button[type="submit"]:focus {
+  outline: none;
+}
+
+.notice-form button[type="submit"]:active {
+  transform: translateY(1px);
+}
+
+/* Noticeboard Styles */
+.noticeboard {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.notices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.notice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.notice-info {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.notice-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.notice-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.notice-actions button:hover {
+  color: #e74c3c;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .notice-form,
+  .noticeboard {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .notice-form input[type="date"],
+  .notice-form input[type="text"],
+  .notice-form textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  .notice-form button[type="submit"] {
+    padding: 10px;
+  }
+
+  .notice h3 {
+    font-size: 18px;
+  }
+
+  .notice p {
+    font-size: 14px;
+  }
+
+  .notice button {
+    padding: 8px;
+  }
+}

@@ -1,0 +1,370 @@
+.main-container {
+  grid-area: main;
+  overflow-y: auto;
+  padding: 15px 15px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.main-title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 25px;
+  color: #807f7f;
+}
+
+.main-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0px;
+  margin: 20px 0;
+  margin-left: 10px,0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px 20px;
+  border-radius: 5px;
+}
+
+.card:first-child {
+  background-color: #f16c69;
+}
+
+.card:nth-child(2) {
+  background-color: #f16c69;
+}
+
+.card:nth-child(3) {
+  background-color: #f16c69;
+}
+.card:nth-child(4) {
+  background-color: #f16c69;
+}
+
+.card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-inner > .card_icon {
+  font-size: 30px;
+}
+
+.charts {
+  color: #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 100px;
+  height: 400px;
+}
+
+@media screen and (max-width: 992px) {
+.grid-container {
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas:
+    'header'
+    'main';
+}
+}
+
+@media screen and (max-width: 768px) {
+.main-cards {
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 0;
+}
+
+.charts {
+  grid-template-columns: 1fr;
+  margin-top: 30px;
+}
+}
+
+@media screen and (max-width: 576px) {
+.hedaer-left {
+  display: none;
+}
+}
+
+.main-container {
+  grid-area: main;
+  overflow-y: auto;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.main-title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.main-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.container-wrapper {
+  display: flex;
+  justify-content:space-around;
+  margin: 10px 0;
+  gap:5px;
+}
+
+.container {
+  background-color: #ffffff;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(228, 154, 154, 0.1);
+  padding: 10px;
+  margin-top: 20px;
+  width: 28%;
+  height:30%;
+}
+
+.container-title {
+  text-align:left;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.status-bar {
+  margin-top: 5px;
+}
+
+.status-item {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.status-label {
+  display: flex;
+  margin-right: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-line {
+  background-color: #e0e0e0;
+  border-radius: 30px;
+  height: 5px;
+  width: 90%;
+}
+
+.status-fill {
+  border-radius: 20px;
+  height: 80%;
+}
+
+.view-button {
+  background-color: #fd9393;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 40%;
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 80px;
+}
+
+.chart-title{
+  margin-left: 50px;
+}
+@media screen and (max-width: 768px) {
+  .main-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+
+  .container-wrapper {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .birthday-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+  }
+
+  .container-wrapper {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .birthday-container {
+    width: 100%;
+  }
+}
+.birthday-container {
+  background-color: #ffffff;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(228, 154, 154, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+  width: 30%; /* Default width */
+  height: auto; /* Adjust height as needed */
+}
+
+
+.birthday-title {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.birthday-message {
+  margin-top: 10px;
+}
+
+.highlighted-message {
+  background-color: rgb(227, 238, 125);
+  border: 2px solid #f06e6e;
+  padding: 10px;
+  border-radius: 5px;
+  font-style: italic;
+  display: flex;
+  text-align:start;
+  align-items: center;
+}
+
+.birthday-profile {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.profile-img-container {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 70px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.upload-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.birthday-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.birthday-info p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.birthday-info .email-icon {
+  margin-left: 5px;
+}
+
+
+/* Media query for screens 768px and below */
+@media screen and (max-width: 768px) {
+  .main-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+
+  .container-wrapper {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .birthday-container {
+    width: 100%;
+  }
+}
+
+/* Media query for screens 576px and below */
+@media screen and (max-width: 576px) {
+  .main-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+  }
+
+  .container-wrapper {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .birthday-container {
+    width: 100%;
+  }
+}
+

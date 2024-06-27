@@ -1,0 +1,85 @@
+.leave-management-container {
+  padding: 20px;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+  margin-top:50px;
+}
+
+.filter-section button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: none;
+  cursor: pointer;
+  background-color: rgb(240, 119, 119);
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.filter-section button.active {
+  background-color: #df7777;
+  color: #fff;
+  font-weight: bold;
+}
+
+.leave-requests {
+  /* Styles for leave requests container */
+}
+
+.leave-request {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.leave-request div {
+  margin-bottom: 5px;
+}
+
+.actions button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: none;
+    cursor: pointer;
+    background-color: rgb(240, 119, 119);
+    color: aliceblue;
+    font-weight: bold;
+}
+.h1{
+    color: #fff;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+  }
+  
+  .filter-section button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .filter-section button.approve {
+    background-color: #28a745; /* Green color for approve */
+    color: #fff;
+  }
+  
+  .filter-section button.pending {
+    background-color: #ffc107; /* Yellow color for pending */
+    color: #000; /* Black color for text */
+  }
+  
+  .filter-section button.reject {
+    background-color: #dc3545; /* Red color for reject */
+    color: #fff;
+  }
+  
+  .filter-section button.active {
+    background-color: #868181;
+    color: #fff;
+  }
+  .h2{
+    color: #ccc;
+  }

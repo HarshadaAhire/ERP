@@ -1,0 +1,35 @@
+/* Aholiday.css */
+.holiday-screen {
+  text-align: center;
+}
+
+.holiday-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust grid columns as needed */
+  grid-gap: 20px;
+  margin-top: 20px;
+  margin-left: 130px;
+}
+
+.holiday-card {
+  width: 200px; /* Set a fixed width for all holiday cards */
+  height: 150px; /* Set a fixed height for all holiday cards */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  color: #070606;
+  justify-content: space-between; /* Align items at the top and bottom */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.date-container {
+  text-align: center;
+}
+
+.holiday-card:hover {
+  background-color: #c4b9b9; /* Change background color on hover */
+}

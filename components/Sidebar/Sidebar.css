@@ -1,0 +1,94 @@
+/* Ensure your sidebar is sticky */
+#sidebar {
+  grid-area: sidebar;
+  height: 100vh; /* Full viewport height */
+  background-color: #ffffff;
+  color: black;
+  overflow-y: auto;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0; /* Sticks the sidebar to the top of the viewport */
+}
+
+.sidebar-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px 0px 20px;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.sidebar-title > span {
+  display: none;
+}
+
+.sidebar-brand {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sidebar-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.sidebar-list-item {
+  padding: 20px 20px 20px 20px;
+  font-size: 18px;
+}
+
+.sidebar-list-item:hover {
+  background-color: #f7cac9;
+  cursor: pointer;
+}
+
+.sidebar-list-item a:hover {
+  color: #f78484; /* Change text color on hover */
+}
+
+.sidebar-list-item a:hover .icon {
+  color: #fd6e6e; /* Change icon color on hover */
+}
+.sidebar-list-item > a {
+  text-decoration: none;
+  color:#3e3e3f;
+  font-weight: bold;
+}
+
+.sidebar-logo {
+  width: 80%; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.sidebar-responsive {
+  display: inline !important;
+  position: absolute;
+  z-index: 12 !important;
+}
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+      'header'
+      'main';
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline;
+  }
+
+  .sidebar-title > span {
+    display: inline;
+  }
+}

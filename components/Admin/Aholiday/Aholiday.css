@@ -1,0 +1,114 @@
+/* Base styles */
+.holiday-screen {
+  text-align:justify; /* Center align the title */
+  color: #807f7f;
+  padding: 20px;
+  /* overflow-y: auto; Enable vertical scrolling */
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+.h1 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #807f7f;
+  margin-bottom: 20px;
+}
+
+.holiday-container {
+  display: grid;
+  gap: 45px;
+  justify-content: center; /* Center align cards horizontally */
+  /* align-items: center; Center align cards vertically */
+  margin-top: 20px;
+  padding: 0 20px; /* Ensure equal padding on the left and right */
+  
+}
+
+
+.holiday-card {
+  background-color: #483C32;
+  font-size: 0.9rem;
+  width: 22rem;
+  height: 20rem;
+  margin-bottom: 2.2rem;
+  color: #eeeae7;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.41);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center align content vertically and horizontally */
+}
+
+.date-container {
+  text-align: center;
+  overflow: hidden; /* Ensure text does not overflow */
+}
+
+/* Media query for large devices (desktops) */
+@media screen and (min-width: 1025px) {
+  .h1 {
+    font-size: 30px;
+  }
+
+  .holiday-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .holiday-card {
+    width: 200px; /* Fixed width for large screens */
+    height: 170px; /* Fixed height for large screens */
+  }
+}
+
+/* Media query for medium devices (tablets) */
+@media screen and (max-width: 1024px) {
+  .h1 {
+    font-size: 25px;
+  }
+
+  .holiday-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .holiday-card {
+    width: 180px; /* Adjust width for tablets */
+    height: 150px; /* Adjust height for tablets */
+  }
+}
+
+/* Media query for small devices (large smartphones) */
+@media screen and (max-width: 768px) {
+  .h1 {
+    font-size: 22px;
+  }
+
+  .holiday-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .holiday-card {
+    width: 160px; /* Adjust width for large smartphones */
+    height: 130px; /* Adjust height for large smartphones */
+    padding: 15px;
+  }
+}
+
+/* Media query for extra small devices (small smartphones) */
+@media screen and (max-width: 480px) {
+  .h1 {
+    font-size: 20px;
+  }
+
+  .holiday-container {
+    grid-template-columns: 1fr;
+  }
+
+  .holiday-card {
+    width: 80%; /* Adjust width for small smartphones */
+    height: auto; /* Adjust height to fit content */
+    padding: 10px;
+  }
+}

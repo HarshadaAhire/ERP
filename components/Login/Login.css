@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6dede; /* Light background color */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: #0c0b0b;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  height: 100vh; /* Ensure full viewport height */
+}
+
+/* Container Styles */
+.login-container {
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Container width */
+  background-color: #ffffff; /* White background */
+  position: relative;
+}
+
+/* Tab Styles */
+ .tabs {
+  display: flex;
+  justify-content: flex-end; /*Align tabs to the right */
+   margin-bottom: 20px; 
+ }
+
+ .tab {
+   background: none; 
+   gap: 10px;/* Adjust the gap as needed */
+   border: none; 
+  padding: 10px 10px; 
+  cursor: pointer;
+  font-size: 16px;
+  color: #0056b3;
+} 
+
+
+/* .tab.active {
+  font-weight: bold;
+  border-bottom: 2px solid #0056b3;
+} */
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 10px); /* Adjust as needed */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #f38a8a;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Forgot Password Link */
+.forgot {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+/* Register Link */
+.register-link {
+  text-align: center;
+}

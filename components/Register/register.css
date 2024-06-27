@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6dede; /* Light background color */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: #0c0b0b;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  height: 100vh; /* Ensure full viewport height */
+  /* overflow: hidden; Remove scroll bars */
+}
+
+/* Container Styles */
+.register-container {
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 700px; /* Container width */
+  background-color: #ffffff; /* White background */
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 20px; /* Adjust as needed */
+  color: #0a0a0a;
+}
+
+.form-group:last-child {
+  margin-right: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 50%; /* Full width */
+  max-width: 100%; /* Ensure it doesn't exceed the parent */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.terms {
+  color: #0056b3; /* Blue color for terms and conditions */
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #f38a8a;
+  color: #ffffff;
+  border: none;
+  width:100%;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: center; /* Center the button */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.back-to-login-container {
+  display: flex;
+  justify-content:center;
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+.back-to-login {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.back-to-login:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-group {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .form-group:last-child {
+    margin-bottom: 0;
+  }
+
+  .register-container {
+    width: calc(100% - 40px); /* Adjust as needed */
+  }
+}

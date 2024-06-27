@@ -1,0 +1,118 @@
+.team-heading{
+    margin-right:0%;
+    margin-top:5%;
+    color: aliceblue;
+}
+
+
+
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .team-leader {
+    margin-bottom: 40px;
+    margin-top: 20px; /* Add margin-top to move the team leader down */
+    margin-left: 80%;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    margin-left: 80%;
+    gap:initial;
+    
+  }
+  
+  
+  .team-member {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .member-details h3 {
+    margin: 5px 0;
+  }
+  
+  .member-details p {
+    margin: 0;
+  }
+  
+  .profile-img-inputs {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profile-img-inputs input {
+    margin: 5px;
+  }
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    overflow: hidden; /* Ensures the image is contained within the circle */
+    background-color: rgb(213, 213, 226); /* Change the background color here */
+  }
+  
+  .profile-img img {
+    width: 70%; /* Ensures the image fills the circle */
+    height: auto;
+  }
+    
+
+
+  /* Footer Container */
+.footer-container {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+  margin-top: 40px;
+  width:1500px;
+  
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.social-media {
+  margin-right: 20px;
+}
+
+.terms-and-conditions {
+  margin-right: 20px;
+}
+
+.terms-and-conditions p {
+  margin: 0;
+}
+
+/* Copyright */
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.copyright p {
+  font-size: 14px;
+  color: #888;
+}
+
+ 
